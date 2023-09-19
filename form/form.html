@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center;">SENCHOLA TECHNOLOGY REGISTRATION FORM</h1>
+    </div>
+    <div id="container">
+    <form>
+        <div>
+        <label for="name">NAME</label >
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+        <label for="mail">EMAIL ID</label>
+        <input id="mail" type="email" name="email" required>
+    </div>
+    <div>
+        <label for="pass">PASSWORD</label>
+        <input type="password" id="pass" name="password" required>
+    </div>
+    <div>
+        <label for="mobile">MOBILE NUMBER</label>
+        <input type="number" id="mobile" name="mobile number"  required  >
+    </div>
+    <div>
+        <label for="birth">DOB</label>
+        <input type="date" id="birth" name="dob" required>
+    </div>
+    <div>
+        <!-- <label>GENDER</label> -->
+       <input type="radio" id="male" name="gender" value="male"required>
+        <label for="male">MALE</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">FEMALE</label>
+    </div>
+    <div>
+        <label for="skills">SELECT THE SKILLS</label>
+        <select id="skills" required>
+            <option>SELECT</option>
+            <option value="frontend">FRONTEND</option>
+            <option value="backend">BACKEND</option>
+            <option value="ui/ux">UI/UX</option>
+            <option value="data analytics">DATA ANALYTICS</option>
+            <option value="testing">TESTING</option>
+        </select>
+    </div>
+    <div>
+        <label for="about">ABOUT</label>
+        <textarea cols="30" rows="5">Introduction of yourself</textarea>
+    </div>
+    <div>
+        <button type="submit">SUBMIT</button>
+    </div>
+    </form>
+    </div>
+    <style>
+       #container{
+        width: 500px;
+        height: 350px;
+        /* text-align: center; */
+        padding: 30px;
+        margin: 20px;
+        font-size: 30px;
+        border: 1px solid ;
+        position: absolute;
+        left: 30%;
+        top:25%;
+       } 
+       form button{
+           position: relative;
+           left: 40%;
+           font-size: large;
+           
+       }
+       form input{
+        font-size: large;
+       }
+       
+    </style>
+</body>
+</html>
